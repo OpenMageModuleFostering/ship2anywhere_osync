@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ship2Anywhere_oSync</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Ship2Anywhere Order Sync extension for Magento</summary>
+    <description>Ship2Anywhere Order Sync extension for Magento</description>
+    <notes>First stable release</notes>
+    <authors><author><name>Michael Teasdale</name><user>michaelgt</user><email>michael@ship2anywhere.com.au</email></author></authors>
+    <date>2015-02-11</date>
+    <time>18:36:40</time>
+    <contents><target name="magecommunity"><dir name="Ship2Anywhere"><dir name="OrderSync"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><dir name="View"><dir name="Tab"><file name="Info.php" hash="b7473499549cb67b41fb350c4e92af4a"/></dir></dir></dir></dir><dir name="System"><dir name="Config"><dir name="Form"><dir name="Field"><file name="TokenInfo.php" hash="c61fc639a02bb112766fe829e1663e0b"/></dir></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="77e2d4c5a5fd16491a5e77321a243b20"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Order"><file name="Statuses.php" hash="8f37725561d115b7d1a9caa22985a55a"/></dir><file name="Stores.php" hash="d4c894c2d087a64286cbe7dd655e638c"/></dir><file name="Source.php" hash="008a015bdd44aaf143b8a33b0c33b847"/></dir></dir></dir><dir name="controllers"><file name="RestController.php" hash="baf3237f710d915f88b91cc684776538"/></dir><dir name="etc"><file name="adminhtml.xml" hash="29db9046ce4ca384f06beb7f773d7d4f"/><file name="config.xml" hash="cf96431c22eff0fb68632853b6f78606"/><file name="system.xml" hash="d400b5cf1b0bbd9560c6aa8816089d1e"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="osync.xml" hash="0de314e11236e5b99dace09275d82075"/></dir><dir name="template"><dir name="osync"><dir name="sales"><dir name="order"><dir name="view"><dir name="tab"><file name="info.phtml" hash="c20a3a8584db83724688693117c99deb"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ship2Anywhere_OrderSync.xml" hash="b34be217fd9b0815dc120faee1b02211"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

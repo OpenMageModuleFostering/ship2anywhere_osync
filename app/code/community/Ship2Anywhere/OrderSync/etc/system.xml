@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Ship 2 Anywhere extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Ship2Anywhere
+ * @package    Ship2Anywhere_OrderSync
+ * @copyright  Copyright (C) 2014 Ship 2 Anywhere (https://www.ship2anywhere.com.au/)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+
+/**
+ * System Config Layount
+ *
+ * @category   Ship2Anywhere
+ * @package    Ship2Anywhere_OrderSync
+ * @subpackage etc
+ * @author     Michael Teasdale <michael@ship2anywhere.com.au>
+ */
+ -->
+
+<config>
+    <sections>
+        <s2a_osync translate="label">
+            <label>Ship2Anywhere Order Sync</label>
+            <tab>sales</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>322</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <token_info>
+                            <frontend_model>s2a_osync/adminhtml_system_config_form_field_tokenInfo</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </token_info>
+                        <enable translate="label">
+                            <label>Enable Synchronization</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enable>
+                        <allowed_stores translate="label">
+                            <label>Allowed Stores</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>s2a_osync/system_config_source_stores</source_model>
+                            <frontend_class>required-entry</frontend_class>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <comment>Select here stores which order will be exported</comment>
+                        </allowed_stores>
+                        <allowed_order_statuses translate="label">
+                            <label>Allowed Order Statuses</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>s2a_osync/system_config_source_order_statuses</source_model>
+                            <frontend_class>required-entry</frontend_class>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                            <comment>Select here stuses of orders which will be exported</comment>
+                        </allowed_order_statuses>
+                    </fields>
+                </general>
+            </groups>
+        </s2a_osync>
+    </sections>
+</config>
