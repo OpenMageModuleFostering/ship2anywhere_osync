@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Ship2Anywhere_oSync",
+    "name": "openmage-module-fostering\/ship2anywhere_osync",
     "type": "magento-module",
-    "license": "OSL-v3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Ship2Anywhere Order Sync extension for Magento",
     "authors": [
